@@ -93,6 +93,7 @@ if ENV:
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
         DRAGON_STRING = os.environ.get("DRAGON_STRING", None)
+        RISHABH_AI = os.environ.get("RISHABH_AI", None)
         EXTRA_PLUGIN = os.environ.get("EXTRA_PLUGIN", None)
         ASSISTANT = os.environ.get("ASSISTANT", None)
         ABUSE = os.environ.get("ABUSE", None)
