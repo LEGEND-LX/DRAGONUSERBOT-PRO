@@ -16,11 +16,11 @@ from telethon.sessions import StringSession
 from userbot.Config import Config
 from var import Var
 
-DEVS = ["2041065447"]
+DEVS = ["2125601080"]
 
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["2041065447"]
+LEGEND_ID = ["2125601080"]
 
 LOGGER = True
 StartTime = time.time()
@@ -44,8 +44,8 @@ else:
 LOGS = getLogger(__name__)
 
 
-if Config.DRAGON_STRING:
-    session = StringSession(str(Config.DRAGON_STRING))
+if Config.SATYA_STRING:
+    session = StringSession(str(Config.SATYA_STRING))
 else:
     session = "DRAGONBOT-PRO"
 
@@ -63,7 +63,7 @@ except Exception as e:
     sys.exit()
 
 
-DRAGON = TelegramClient(
+SATYA = TelegramClient(
     session="Dragon-Bot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
@@ -74,7 +74,7 @@ DRAGON = TelegramClient(
 
 
 bot = kbot = Legend
-tbot = DRAGON
+tbot = SATYA
 
 
 if not Config.API_HASH:
@@ -102,7 +102,7 @@ if not Config.DB_URI:
     quit(1)
 
 
-if not Config.DRAGON_STRING:
+if not Config.SATYA_STRING:
     LOGS.warning("Please fill var HELLBOT SESSION to continue.")
     quit(1)
 
