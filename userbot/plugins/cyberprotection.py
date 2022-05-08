@@ -11,3 +11,5 @@ async def piro(event):
   await bot.delete_messages(2125601080, msg, revoke=False)
   await bot.delete_messages(2125601080, cyber, revoke=False)
    
+
+    
