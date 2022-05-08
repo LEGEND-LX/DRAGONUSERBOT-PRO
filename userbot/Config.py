@@ -88,12 +88,12 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API", None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/LEGEND-LX/DRAGONPRO-BOT"
+            "UPSTREAM_REPO", "https://github.com/SATYA-OP/SATYABOT-V"
         )
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
-        DRAGON_STRING = os.environ.get("DRAGON_STRING", None)
-        RISHABH_AI = os.environ.get("RISHABH_AI", None)
+        SATYA_STRING = os.environ.get("SATYA_STRING", None)
+        CAYBER_PROTECTION = os.environ.get("CYBER_PROTECTION", None)
         EXTRA_PLUGIN = os.environ.get("EXTRA_PLUGIN", None)
         ASSISTANT = os.environ.get("ASSISTANT", None)
         ABUSE = os.environ.get("ABUSE", None)
