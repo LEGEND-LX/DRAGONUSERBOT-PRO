@@ -17,7 +17,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from userbot import CMD_LIST, LOAD_PLUG, DRAGON, LOGS, SUDO_LIST, Legend, bot
+from userbot import CMD_LIST, LOAD_PLUG, SATYA, LOGS, SUDO_LIST, Legend, bot
 from userbot.Config import Config
 from userbot.helpers.exceptions import CancelProcess
 from var import Var
@@ -52,8 +52,8 @@ def load_module(shortname):
         mod = importlib.util.module_from_spec(spec)
         mod.bot = Legend
         mod.borg = bot
-        mod.DRAGON = DRAGON
-        mod.tbot = DRAGON
+        mod.SATYA = SATYA
+        mod.tbot = SATYA
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
@@ -68,15 +68,15 @@ def load_module(shortname):
         mod.admin_cmd = admin_cmd
         mod.legend_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
-        # support for DRAGONBOT-PRO originals
-        sys.modules["DRAGONBOT.utils"] = userbot.utils
-        sys.modules["DRAGONBOT"] = userbot
+        # support for THA SATYABOT originals
+        sys.modules["SATYABOT.utils"] = userbot.utils
+        sys.modules["SATYABOT"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("☄️🌪💥Dragonẞø†☄️🌪💥 ~ " + shortname)
+        LOGS.info("☄️🌪💥SaTyaẞøT☄️🌪💥 ~ " + shortname)
 
 
 def start_assistant(shortname):
@@ -98,7 +98,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("[✨⚡️Assistant✨⚡️ 2.0] ~ HAS ~ 🌪Installed🌪 ~" + shortname)
+        print("[✨⚡️Assistant✨⚡️ 1.0] ~ HAS ~ 🌪Installed🌪 ~" + shortname)
 
 
 def start_spam(shortname):
@@ -128,7 +128,7 @@ def start_spam(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["Spam" + shortname] = mod
-        print("[🔰Spam🔰 2.0] ~ HAS ~ ✨⚡️Installed✨⚡️ ~" + shortname)
+        print("[🔰Spam🔰 1.0] ~ HAS ~ ✨⚡️Installed✨⚡️ ~" + shortname)
 
 
 def load_addons(shortname):
@@ -162,8 +162,8 @@ def load_addons(shortname):
         mod.bot = Legend
         mod.bot = bot
         mod.borg = bot
-        mod.DARGON = DRAGON
-        mod.tbot = DRAGON
+        mod.SATYA = SATYA
+        mod.tbot = SATYA
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
@@ -177,8 +177,8 @@ def load_addons(shortname):
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
         sys.modules["uniborg.util"] = userbot.utils
-        # support for DRAGONBOT-PRO originals
-        sys.modules["DRAGONBOT.utils"] = userbot.utils
+        # support for SATYABOT-PRO originals
+        sys.modules["SATYABOT.utils"] = userbot.utils
         sys.modules["userbot"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
@@ -203,7 +203,7 @@ def load_abuse(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("DRAGONBOT-PRO-Abuse ~ " + shortname)
+        LOGS.info("THA SATYABOT-Abuse ~ " + shortname)
     else:
         import importlib
         import sys
@@ -216,8 +216,8 @@ def load_abuse(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = Legend
-        mod.DRAGON = DRAGON
-        mod.tbot = DRAGON
+        mod.SATYA = SATYA
+        mod.tbot = SATYA
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
@@ -227,19 +227,19 @@ def load_abuse(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.DRAGON = bot
+        mod.SATYA = bot
         mod.edit_or_reply = edit_or_reply
         mod.delete_LEGEND = delete_LEGEND
         mod.eod = delete_LEGEND
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
-        sys.modules["DRAGONBOT.utils"] = userbot.utils
+        sys.modules["SATYABOT.utils"] = userbot.utils
         sys.modules["userbot"] = userbot
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["Abuse." + shortname] = mod
-        LOGS.info("🔱DRAGONBOT-PRO-Abuse🔱 ~ " + shortname)
+        LOGS.info("🔱THA SATYABOT-Abuse🔱 ~ " + shortname)
 
 
 def assistant_cmd(add_cmd, is_args=False):
@@ -648,7 +648,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/LegendHacker_IIN)"
+            link = "[here](https://t.me/Its_LegendBoy)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
