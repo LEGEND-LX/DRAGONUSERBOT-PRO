@@ -11,7 +11,7 @@ from userbot.helpers.ffunctions.utils import utc_to_local
 from .paste import pastetext
 
 
-async def paste_message(text, pastetype="p", extension=None, markdown=True):
+async def paste_message(text, pastetype="p", extension=None, markdown=False):
     if markdown:
         text = md_to_text(text)
     response = await pastetext(text, pastetype, extension)
